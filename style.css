@@ -1,0 +1,81 @@
+body {
+  font-family: sans-serif;
+}
+
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  max-width: 420px;
+}
+
+.month-header {
+  grid-column: 1 / -1;
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 4px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.day {
+  border: 1px solid #ccc;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.free {
+  background: #eee;
+}
+
+.duty {
+  background: #ff6b6b;
+}
+
+.duty-car {
+  background: #4dabf7;
+}
+
+.duty.half.start {
+  background: linear-gradient(
+    to left,
+    #ff6b6b 50%,
+    #eee 50%
+  );
+}
+
+.duty.half.end {
+  background: linear-gradient(
+    to right,
+    #ff6b6b 50%,
+    #eee 50%
+  );
+}
+
+.duty-car.half.start {
+  background: linear-gradient(
+    to left,
+    #4dabf7 50%,
+    #eee 50%
+  );
+}
+
+.duty-car.half.end {
+  background: linear-gradient(
+    to right,
+    #4dabf7 50%,
+    #eee 50%
+  );
+}
+
+.holiday {
+  border: 2px solid gold;
+}
+
+.day.empty {
+  border: none;
+  background: transparent;
+}

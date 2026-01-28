@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<label>
+  Data startu pierwszego dyżuru:
+  <input type="date" id="startDateInput" value="2026-01-03">
+</label>
+
+<label>
+  Pokaż dni do przodu:
+  <input type="number" id="daysCountInput" value="42" min="7" step="7">
+</label>
+
+<button id="refreshBtn">Odśwież</button>
+
+
+
+
+
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Kalendarz dyżurów</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="calendar"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

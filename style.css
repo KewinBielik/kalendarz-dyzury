@@ -79,3 +79,44 @@ body {
   border: none;
   background: transparent;
 }
+
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+
+  body {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  input,
+  button {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #calendar {
+    gap: 6px;
+  }
+
+  .day {
+    height: 56px;
+    font-size: 14px;
+  }
+
+  .month-header {
+    grid-column: 1 / -1;
+    font-size: 18px;
+    margin: 12px 0 4px;
+  }
+}
+
+input {
+  font-size: 16px;
+}
